@@ -1,0 +1,40 @@
+Análisis de Funciones
+Clasificaremos cada función que hemos definido a lo largo de los archivos para determinar su naturaleza.
+
+Funciones Puras (16)
+Estas funciones son deterministas, no tienen efectos secundarios y se dedican exclusivamente a la transformación de datos.
+
+puras.ts -> agregarTareaPura: Devuelve un nuevo array con la tarea añadida.
+puras.ts -> actualizarTareaPura: Devuelve un nuevo objeto de tarea con los datos actualizados.
+puras.ts -> editarTareaPura: Devuelve un nuevo array con la tarea especificada editada.
+puras.ts -> formatearTareasPura: Transforma una lista de tareas en una cadena de texto formateada.
+puras.ts -> buscarTareaPorTituloPura: Busca una tarea y devuelve el objeto encontrado o undefined.
+puras.ts -> eliminarTareaPura: Devuelve un nuevo array sin la tarea especificada.
+puras.ts -> validarYTransformarEstadoPura: Valida y transforma la entrada del usuario para el estado.
+puras.ts -> validarDificultadPura: Valida la entrada del usuario para la dificultad.
+puras.ts -> validarVencimientoPuro: Valida y transforma la entrada de fecha del usuario.
+puras.ts -> generarMensajeBusquedaPura: Genera el string de resultado para una búsqueda.
+puras.ts -> generarMensajeConfirmacionEliminarPuro: Genera el string de confirmación para eliminar una tarea.
+puras.ts -> generarPromptDescripcionPura: Genera la pregunta para editar la descripción.
+puras.ts -> generarPromptEstadoPura: Genera la pregunta para editar el estado.
+puras.ts -> generarPromptDificultadPura: Genera la pregunta para editar la dificultad.
+puras.ts -> generarMenuPuro: Genera el texto del menú principal.
+data.ts -> crearTarea: Transforma datos crudos en un objeto de tarea inmutable.
+Funciones Impuras (7)
+Estas funciones realizan operaciones de I/O (entrada/salida) o gestionan el estado y el flujo principal de la aplicación.
+
+impuras.ts -> agregarTareaImpura: Interactúa con el usuario para obtener los datos de una nueva tarea.
+impuras.ts -> visualizarTareasImpura: Muestra información en la consola.
+impuras.ts -> buscarYMostrarTareaImpura: Orquesta la entrada del usuario y la visualización de la búsqueda.
+impuras.ts -> editarTareaImpura: Orquesta la interacción con el usuario para la edición de una tarea.
+impuras.ts -> eliminarTareaImpura: Gestiona el diálogo con el usuario para la eliminación de una tarea.
+entradas.ts -> input: Su única responsabilidad es leer la entrada del usuario desde la consola.
+main.ts -> main: Es la función principal que inicia la aplicación y contiene el bucle recursivo (cicloPrincipal) que gestiona el estado y el flujo de control.
+Resumen y Porcentaje Final
+Total de Funciones Analizadas: 23
+Funciones Puras: 16
+Funciones Impuras: 7
+Ahora, calculamos los porcentajes finales:
+
+Porcentaje de Funciones Puras: (16 / 23) * 100 ≈ 69.6%
+Porcentaje de Funciones Impuras: (7 / 23) * 100 ≈ 30.4%
